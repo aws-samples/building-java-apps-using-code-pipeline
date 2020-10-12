@@ -26,7 +26,7 @@ npm install -g typescript@latest
 Run git clone on this repository from Cloud9:
 
 ```bash
-git clone https://github.com/saimadineni/codeGuruDemoApp
+git clone https://github.com/aws-samples/building-java-apps-using-code-pipeline.git
 ```
 
 Once cloned, run the below commands:
