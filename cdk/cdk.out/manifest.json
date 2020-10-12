@@ -1,0 +1,1361 @@
+{
+  "version": "5.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CdkStackJavaApp": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkStackJavaApp.template.json"
+      },
+      "metadata": {
+        "/CdkStackJavaApp": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "repositoryName": "aws-cdk/assets",
+              "imageTag": "d2cb62da0695ad6f3d2861792324d6b6833e161effce4c51377e15a153376179",
+              "id": "d2cb62da0695ad6f3d2861792324d6b6833e161effce4c51377e15a153376179",
+              "packaging": "container-image",
+              "path": "asset.d2cb62da0695ad6f3d2861792324d6b6833e161effce4c51377e15a153376179.d",
+              "sourceHash": "d2cb62da0695ad6f3d2861792324d6b6833e161effce4c51377e15a153376179"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/core/lib/construct-compat.ts:411:92)",
+              "LegacyStackSynthesizer.doAddDockerImageAsset (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:124:23)",
+              "LegacyStackSynthesizer.addDockerImageAsset (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:84:19)",
+              "CdkStackJavaApp.addDockerImageAsset (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/core/lib/stack.ts:631:29)",
+              "LegacyStackSynthesizer.addDockerImageAsset (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:88:25)",
+              "new DockerImageAsset (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ecr-assets/lib/image-asset.ts:143:40)",
+              "Function.fromAsset (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:1374:19)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:81:47)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodeCommitRepo/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodeCommitRepoDC6A41F9",
+            "trace": [
+              "new Repository (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:332:23)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:28:24)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodeCommitRepo/CdkStackJavaAppCodePipeline012C859AEventRule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodeCommitRepoCdkStackJavaAppCodePipeline012C859AEventRuleEDE532DD",
+            "trace": [
+              "new Rule (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-events/lib/rule.ts:129:22)",
+              "Repository.onEvent (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:142:18)",
+              "Repository.onStateChange (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:156:23)",
+              "Repository.onReferenceUpdated (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:178:23)",
+              "Repository.onCommit (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:224:23)",
+              "CodeCommitSourceAction.bound (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:126:29)",
+              "CodeCommitSourceAction.bind (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:57:17)",
+              "Pipeline._attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:365:33)",
+              "Stage.attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:141:27)",
+              "Stage.addAction (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:91:29)",
+              "new Stage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:302:19)",
+              "new Pipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:286:12)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:164:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CdkStackJavaApp-vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkStackJavaAppvpc0DF6A445",
+            "trace": [
+              "new Vpc (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1166:21)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:33:17)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CdkStackJavaApp-vpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkStackJavaAppvpcPublicSubnet1Subnet149DA61A",
+            "trace": [
+              "new Subnet (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1488:20)",
+              "new PublicSubnet (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1702:5)",
+              "/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1346:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1328:28)",
+              "Vpc.createSubnets (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1323:12)",
+              "new Vpc (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1195:10)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:33:17)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CdkStackJavaApp-vpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkStackJavaAppvpcPublicSubnet1RouteTableB1DBDE15",
+            "trace": [
+              "new Subnet (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1505:19)",
+              "new PublicSubnet (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1702:5)",
+              "/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1346:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1328:28)",
+              "Vpc.createSubnets (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1323:12)",
+              "new Vpc (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1195:10)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:33:17)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CdkStackJavaApp-vpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkStackJavaAppvpcPublicSubnet1RouteTableAssociation1A650B66",
+            "trace": [
+              "new Subnet (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1511:5)",
+              "new PublicSubnet (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1702:5)",
+              "/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1346:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1328:28)",
+              "Vpc.createSubnets (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1323:12)",
+              "new Vpc (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1195:10)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:33:17)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CdkStackJavaApp-vpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkStackJavaAppvpcPublicSubnet1DefaultRoute33A02396",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1527:19)",
+              "/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1214:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1213:46)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:33:17)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CdkStackJavaApp-vpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkStackJavaAppvpcPublicSubnet1EIPA6E9B25A",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1714:21)",
+              "NatGatewayProvider.configureNat (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:173:27)",
+              "Vpc.createNatGateways (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1298:14)",
+              "new Vpc (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1220:14)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:33:17)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CdkStackJavaApp-vpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkStackJavaAppvpcPublicSubnet1NATGateway425A4D1E",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1712:17)",
+              "NatGatewayProvider.configureNat (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:173:27)",
+              "Vpc.createNatGateways (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1298:14)",
+              "new Vpc (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1220:14)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:33:17)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CdkStackJavaApp-vpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkStackJavaAppvpcPrivateSubnet1SubnetF7A3E18C",
+            "trace": [
+              "new Subnet (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1488:20)",
+              "new PrivateSubnet (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1740:5)",
+              "/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1351:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1328:28)",
+              "Vpc.createSubnets (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1323:12)",
+              "new Vpc (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1195:10)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:33:17)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CdkStackJavaApp-vpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkStackJavaAppvpcPrivateSubnet1RouteTable0C253DCB",
+            "trace": [
+              "new Subnet (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1505:19)",
+              "new PrivateSubnet (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1740:5)",
+              "/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1351:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1328:28)",
+              "Vpc.createSubnets (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1323:12)",
+              "new Vpc (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1195:10)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:33:17)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CdkStackJavaApp-vpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkStackJavaAppvpcPrivateSubnet1RouteTableAssociation48C76663",
+            "trace": [
+              "new Subnet (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1511:5)",
+              "new PrivateSubnet (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1740:5)",
+              "/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1351:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1328:28)",
+              "Vpc.createSubnets (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1323:12)",
+              "new Vpc (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1195:10)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:33:17)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CdkStackJavaApp-vpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkStackJavaAppvpcPrivateSubnet1DefaultRouteA616A5F0",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:19)",
+              "NatGatewayProvider.configureSubnet (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:186:12)",
+              "NatGatewayProvider.configureNat (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:179:12)",
+              "Vpc.createNatGateways (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1298:14)",
+              "new Vpc (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1220:14)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:33:17)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CdkStackJavaApp-vpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkStackJavaAppvpcIGW3C50341C",
+            "trace": [
+              "new Vpc (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1202:19)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:33:17)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CdkStackJavaApp-vpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkStackJavaAppvpcVPCGW6E726631",
+            "trace": [
+              "new Vpc (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1208:19)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:33:17)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CdkStackJavaApp-bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkStackJavaAppbucket3B2B7B78",
+            "trace": [
+              "new Bucket (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1211:22)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:41:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Role1ABCC5F0",
+            "trace": [
+              "new Role (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:320:18)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:47:18)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodeDeployApplication/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodeDeployApplicationE587C27C",
+            "trace": [
+              "new ServerApplication (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codedeploy/lib/server/application.ts:67:22)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:55:25)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodeDeployDeploymentGroup/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodeDeployDeploymentGroupRole81435E9E",
+            "trace": [
+              "new Role (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:320:18)",
+              "new ServerDeploymentGroup (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codedeploy/lib/server/deployment-group.ts:273:31)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:60:29)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodeDeployDeploymentGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodeDeployDeploymentGroupA33AC6C7",
+            "trace": [
+              "new ServerDeploymentGroup (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codedeploy/lib/server/deployment-group.ts:287:22)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:60:29)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodeBuild/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodeBuildRoleE9A44575",
+            "trace": [
+              "new Role (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:320:18)",
+              "new Project (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:694:31)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:77:21)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodeBuild/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodeBuildRoleDefaultPolicy196BAF24",
+            "trace": [
+              "new Policy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/policy.ts:140:22)",
+              "Role.addToPrincipalPolicy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:361:28)",
+              "Role.addToPolicy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:369:17)",
+              "Project.addToRolePolicy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:200:17)",
+              "CodeCommitSource.bind (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codebuild/lib/source.ts:511:13)",
+              "new Project (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:705:38)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:77:21)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodeBuild/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodeBuild2FDE9E35",
+            "trace": [
+              "new Project (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:747:22)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:77:21)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodePipeline/ArtifactsBucketEncryptionKey/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodePipelineArtifactsBucketEncryptionKey85407CB4",
+            "trace": [
+              "new Key (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-kms/lib/key.ts:360:22)",
+              "new Pipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:229:29)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:164:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodePipeline/ArtifactsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodePipelineArtifactsBucketF1E925CF",
+            "trace": [
+              "new Bucket (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1211:22)",
+              "new Pipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:234:21)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:164:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodePipeline/ArtifactsBucketEncryptionKeyAlias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodePipelineArtifactsBucketEncryptionKeyAliasA0605EC5",
+            "trace": [
+              "new Alias (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-kms/lib/alias.ts:197:22)",
+              "new Pipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:242:7)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:164:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodePipeline/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodePipelineRoleB3A660B4",
+            "trace": [
+              "new Role (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:320:18)",
+              "new Pipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:251:31)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:164:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodePipeline/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodePipelineRoleDefaultPolicy8D520A8D",
+            "trace": [
+              "new Policy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/policy.ts:140:22)",
+              "Role.addToPrincipalPolicy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:361:28)",
+              "Function.addToPrincipal (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/grant.ts:153:61)",
+              "Function.addToPrincipalOrResource (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/grant.ts:119:26)",
+              "Bucket.grant (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:648:23)",
+              "Bucket.grantReadWrite (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:567:17)",
+              "new Pipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:267:25)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:164:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodePipeline/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodePipelineB74E5936",
+            "trace": [
+              "new Pipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:255:26)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:164:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodePipeline/Source/CodeCommit/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodePipelineSourceCodeCommitCodePipelineActionRoleD8DD1B70",
+            "trace": [
+              "new Role (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:320:18)",
+              "Pipeline.getRoleForAction (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:540:20)",
+              "Pipeline._attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:359:29)",
+              "Stage.attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:141:27)",
+              "Stage.addAction (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:91:29)",
+              "new Stage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:302:19)",
+              "new Pipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:286:12)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:164:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodePipeline/Source/CodeCommit/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodePipelineSourceCodeCommitCodePipelineActionRoleDefaultPolicyAFBD34E4",
+            "trace": [
+              "new Policy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/policy.ts:140:22)",
+              "Role.addToPrincipalPolicy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:361:28)",
+              "Function.addToPrincipal (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/grant.ts:153:61)",
+              "Function.addToPrincipalOrResource (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/grant.ts:119:26)",
+              "Bucket.grant (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:648:23)",
+              "Bucket.grantReadWrite (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:567:17)",
+              "CodeCommitSourceAction.bound (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:134:20)",
+              "CodeCommitSourceAction.bind (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:57:17)",
+              "Pipeline._attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:365:33)",
+              "Stage.attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:141:27)",
+              "Stage.addAction (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:91:29)",
+              "new Stage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:302:19)",
+              "new Pipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:286:12)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:164:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodePipeline/EventsRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodePipelineEventsRole4196480D",
+            "trace": [
+              "new Role (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:320:18)",
+              "Object.singletonEventRole (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-events-targets/lib/util.ts:17:16)",
+              "CodePipeline.bind (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.ts:32:39)",
+              "Rule.addTarget (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-events/lib/rule.ts:165:32)",
+              "Repository.onEvent (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:147:10)",
+              "Repository.onStateChange (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:156:23)",
+              "Repository.onReferenceUpdated (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:178:23)",
+              "Repository.onCommit (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:224:23)",
+              "CodeCommitSourceAction.bound (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:126:29)",
+              "CodeCommitSourceAction.bind (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:57:17)",
+              "Pipeline._attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:365:33)",
+              "Stage.attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:141:27)",
+              "Stage.addAction (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:91:29)",
+              "new Stage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:302:19)",
+              "new Pipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:286:12)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:164:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodePipeline/EventsRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodePipelineEventsRoleDefaultPolicy13DBD2D2",
+            "trace": [
+              "new Policy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/policy.ts:140:22)",
+              "Role.addToPrincipalPolicy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:361:28)",
+              "Role.addToPolicy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:369:17)",
+              "Array.forEach (<anonymous>)",
+              "Object.singletonEventRole (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-events-targets/lib/util.ts:21:20)",
+              "CodePipeline.bind (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.ts:32:39)",
+              "Rule.addTarget (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-events/lib/rule.ts:165:32)",
+              "Repository.onEvent (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:147:10)",
+              "Repository.onStateChange (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:156:23)",
+              "Repository.onReferenceUpdated (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:178:23)",
+              "Repository.onCommit (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:224:23)",
+              "CodeCommitSourceAction.bound (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:126:29)",
+              "CodeCommitSourceAction.bind (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:57:17)",
+              "Pipeline._attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:365:33)",
+              "Stage.attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:141:27)",
+              "Stage.addAction (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:91:29)",
+              "new Stage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:302:19)",
+              "new Pipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:286:12)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:164:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodePipeline/Build/CodeBuild/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodePipelineBuildCodeBuildCodePipelineActionRoleD4AF8729",
+            "trace": [
+              "new Role (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:320:18)",
+              "Pipeline.getRoleForAction (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:540:20)",
+              "Pipeline._attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:359:29)",
+              "Stage.attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:141:27)",
+              "Stage.addAction (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:91:29)",
+              "new Stage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:302:19)",
+              "new Pipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:286:12)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:164:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodePipeline/Build/CodeBuild/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodePipelineBuildCodeBuildCodePipelineActionRoleDefaultPolicyED0B3DB6",
+            "trace": [
+              "new Policy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/policy.ts:140:22)",
+              "Role.addToPrincipalPolicy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:361:28)",
+              "Role.addToPolicy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:369:17)",
+              "CodeBuildAction.bound (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.ts:131:18)",
+              "CodeBuildAction.bind (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:57:17)",
+              "Pipeline._attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:365:33)",
+              "Stage.attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:141:27)",
+              "Stage.addAction (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:91:29)",
+              "new Stage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:302:19)",
+              "new Pipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:286:12)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:164:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodePipeline/Deploy/CodeDeploy/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodePipelineDeployCodeDeployCodePipelineActionRole8E617E3C",
+            "trace": [
+              "new Role (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:320:18)",
+              "Pipeline.getRoleForAction (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:540:20)",
+              "Pipeline._attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:359:29)",
+              "Stage.attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:141:27)",
+              "Stage.addAction (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:91:29)",
+              "new Stage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:302:19)",
+              "new Pipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:286:12)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:164:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/CodePipeline/Deploy/CodeDeploy/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodePipelineDeployCodeDeployCodePipelineActionRoleDefaultPolicyFD5A6851",
+            "trace": [
+              "new Policy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/policy.ts:140:22)",
+              "Role.addToPrincipalPolicy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:361:28)",
+              "Role.addToPolicy (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:369:17)",
+              "CodeDeployServerDeployAction.bound (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codedeploy/server-deploy-action.ts:44:18)",
+              "CodeDeployServerDeployAction.bind (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:57:17)",
+              "Pipeline._attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:365:33)",
+              "Stage.attachActionToPipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:141:27)",
+              "Stage.addAction (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:91:29)",
+              "new Stage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:302:19)",
+              "new Pipeline (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:286:12)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:164:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/Instance/InstanceSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InstanceInstanceSecurityGroupF0E2D5BE",
+            "trace": [
+              "new SecurityGroup (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:370:26)",
+              "new Instance (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/instance.ts:263:28)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:198:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/Instance/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InstanceInstanceProfileAB5AEF02",
+            "trace": [
+              "new Instance (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/instance.ts:277:24)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:198:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/Instance/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InstanceC1063A87",
+            "trace": [
+              "new Instance (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/instance.ts:312:21)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:198:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/SsmParameterValue:--aws--service--ami-amazon-linux-latest--amzn2-ami-hvm-x86_64-gp2:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter",
+            "trace": [
+              "Function.fromStringParameterAttributes (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ssm/lib/parameter.ts:327:9)",
+              "Function.valueForTypedStringParameter (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ssm/lib/parameter.ts:397:17)",
+              "AmazonLinuxImage.getImage (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/machine-image.ts:255:37)",
+              "new Instance (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-ec2/lib/instance.ts:282:44)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:198:22)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStackJavaApp/SQS_queue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SQSqueueE5BF4E7F",
+            "trace": [
+              "new Queue (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/@aws-cdk/aws-sqs/lib/queue.ts:263:19)",
+              "new CdkStackJavaApp (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/lib/cdk-stack.ts:230:19)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Module.m._compile (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/smadineni/Downloads/CodeGuruTestWorkspace/mydemoApp/cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1151:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)",
+              "Module.load (internal/modules/cjs/loader.js:1000:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:899:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/core": "1.58.0",
+      "@aws-cdk/cx-api": "1.58.0",
+      "@aws-cdk/cloud-assembly-schema": "1.58.0",
+      "@aws-cdk/aws-s3": "1.58.0",
+      "@aws-cdk/aws-events": "1.58.0",
+      "@aws-cdk/aws-iam": "1.58.0",
+      "@aws-cdk/region-info": "1.58.0",
+      "@aws-cdk/aws-kms": "1.58.0",
+      "@aws-cdk/aws-ec2": "1.58.0",
+      "@aws-cdk/aws-ssm": "1.58.0",
+      "@aws-cdk/aws-logs": "1.58.0",
+      "@aws-cdk/aws-cloudwatch": "1.58.0",
+      "@aws-cdk/aws-codebuild": "1.58.0",
+      "@aws-cdk/aws-ecr-assets": "1.58.0",
+      "@aws-cdk/assets": "1.58.0",
+      "@aws-cdk/aws-ecr": "1.58.0",
+      "@aws-cdk/custom-resources": "1.58.0",
+      "@aws-cdk/aws-lambda": "1.58.0",
+      "@aws-cdk/aws-applicationautoscaling": "1.58.0",
+      "@aws-cdk/aws-autoscaling-common": "1.58.0",
+      "@aws-cdk/aws-codeguruprofiler": "1.58.0",
+      "@aws-cdk/aws-sqs": "1.58.0",
+      "@aws-cdk/aws-s3-assets": "1.58.0",
+      "@aws-cdk/aws-codecommit": "1.58.0",
+      "@aws-cdk/aws-codepipeline": "1.58.0",
+      "@aws-cdk/aws-codepipeline-actions": "1.58.0",
+      "@aws-cdk/aws-cloudformation": "1.58.0",
+      "@aws-cdk/aws-events-targets": "1.58.0",
+      "@aws-cdk/aws-ecs": "1.58.0",
+      "@aws-cdk/aws-elasticloadbalancingv2": "1.58.0",
+      "@aws-cdk/aws-servicediscovery": "1.58.0",
+      "@aws-cdk/aws-autoscaling": "1.58.0",
+      "@aws-cdk/aws-autoscaling-hooktargets": "1.58.0",
+      "@aws-cdk/aws-sns": "1.58.0",
+      "@aws-cdk/aws-sns-subscriptions": "1.58.0",
+      "@aws-cdk/aws-codedeploy": "1.58.0",
+      "jsii-runtime": "node.js/v13.8.0"
+    }
+  }
+}
