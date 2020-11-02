@@ -138,7 +138,7 @@ Now associate the repository with public maven central repository:
 
 * Navigate to AWS console corresponding to the code artifact repository and click `View connection instructions` and select `mvn` as the package manager client
 
-<img src="images/CA-connections-1.png" alt="dashboard" style="border:1px solid black">
+<img src="images/CA-connections-1.png" alt="dashboard" style="border:3px solid black">
 
 * Replace the profiles section, servers section and mirrors section in settings.xml with these values.
 
