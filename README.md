@@ -26,7 +26,7 @@ npm install -g typescript@latest
 Run git clone on this repository from Cloud9:
 
 ```bash
-git clone https://github.com/aws-samples/building-java-apps-using-code-pipeline.git
+git clone https://github.com/aws-samples/building-java-apps-using-code-pipeline.git codeGuruDemoApp
 ```
 
 Once cloned, run the below commands:
@@ -67,27 +67,34 @@ You may be asked to confirm the creation of the roles and authorization before t
 
 The infrastructure will take some time to be created, please wait until you see the Output of CloudFormation printed on the terminal. Until then, take time to review the CDK code in the below file: cdk/lib/cdk-stack.ts
 
-Code Commit repo
-Code build proj.
-Code pipeline
-S3 bucket
-VPC 
-Subnets
-Ec2 instance
-Codedeploy group
-Codedeploy application.
-
-
 You may also check and compare the CloudFormation Template created from this CDK stack:
-cdk/cdk.out/CdkStackEksALBBg.template.json
+cdk/cdk.out/CdkStackJavaApp.template.json
 
 Navigate to the cloudformation console, and find your stack and look at the newly created resources.
 
 <img src="images/CFNresources.png" alt="dashboard" style="border:1px solid black">
 
 
-<b> Step2: CodeGuru Profiling setup :</b>
+<b> Step2: CodeGuru setup :</b>
 
+
+<b>Configuring CodeGuru REVIEWER:</b>
+First we will associate the codecommit repository with CodeGuru service and verify in the listing output:
+
+```
+aws codeguru-reviewer associate-repository --repository CodeCommit={Name=CdkStackJavaApp-repo} 
+aws codeguru-reviewer list-repository-associations 
+```
+
+Note down the ARN from the listing output above and replace that in the CodeBuild project buildspec lines:
+
+```
+aws codeguru-reviewer create-code-review --name mycodereview$TAG --repository-association-arn <ARN> --type RepositoryAnalysis={RepositoryHead={BranchName=master}}
+```
+
+Now navigate to the Build Details -> Environment -> Locate the service role -> Assign this IAM role with permissions for full access to CodeGuru: AmazonCodeGuruReviewerFullAccess
+
+<b>Configuring CodeGuru Profiler:</b>
 Create a profiling groups in CodeGuru Profiler, named `myCodeGuruProfilingGroup-WithIssues`
 
 ```
