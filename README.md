@@ -136,11 +136,9 @@ Now associate the repository with public maven central repository:
 
 4. Modify the settings.xml profiles, mirrors and servers in the git repository
 
-* Navigate to AWS console corresponding to the code artifact repository 
+* Navigate to AWS console corresponding to the code artifact repository and click `View connection instructions` and select `mvn` as the package manager client
 
-<img src="images/CodeArtifactRepo.png" alt="dashboard" style="border:1px solid black">
-
-and click `View connection instructions` and select `mvn` as the package manager client
+<img src="images/CA-connections-1.png" alt="dashboard" style="border:1px solid black">
 
 * Replace the profiles section, servers section and mirrors section in settings.xml with these values.
 
@@ -237,8 +235,11 @@ Note: The package version referred to here is 1.6 to begin with. If need to re-r
 
 1. Navigate to CodePipeline console and check if the pipeline execution is successful
 
+2. Check the version present in CodeArtifact
 
-2. Navigate to CodeGuru profiler section and check the newly created profing group. There should be some reports in 10-15 minutes.
+<img src="images/CA-version.png" alt="dashboard" style="border:1px solid black">
+
+3. Navigate to CodeGuru profiler section and check the newly created profing group. There should be some reports in 10-15 minutes.
 
 <img src="images/CodeGuruProfiling.png" alt="dashboard" style="border:1px solid black">
 
