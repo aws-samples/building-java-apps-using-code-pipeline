@@ -19,7 +19,7 @@
       <repositories>
         <repository>
           <id>mycdkdemoapp--mycdkdemoapp</id>
-          <url>https://mycdkdemoapp-481090335964.d.codeartifact.us-west-2.amazonaws.com/maven/mycdkdemoapp/</url>
+          <url>https://mycdkdemoapp-${ACCOUNT_ID}.d.codeartifact.us-west-2.amazonaws.com/maven/mycdkdemoapp/</url>
         </repository>
       </repositories>
     </profile>
