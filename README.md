@@ -215,6 +215,7 @@ aws codeartifact get-package-version-asset --region=<region> --domain mydomain -
 ```
 
 7. Modify the CodeBuild project to update the CODEARTIFACT_AUTH_TOKEN
+Ensure the package version is the same across script/install.sh and pom.xml files and unique (not existing in CodeArtifact)
 
 8. Push your changes to codecommit and that will trigger the codepipeline for deployment
 
@@ -226,6 +227,11 @@ git add pom.xml
 git commit -m "Updating the CodeDeploy scripts, settings.xml and pom.xml files"
 git push origin master
 ```
+
+This will kickstart the codepipeline, wait for all stages to complete.
+Later after CodeDeploy completes the deployment, wait for around 15 mins for the Profiling Group to start profiling.
+
+Note: The package version referred to here is 1.6 to begin with. If need to re-run the CodePipeline, you would need to update the pom.xml and scripts/install.sh to update the version numbers to next one and then push the new changes to kick-off the pipeline. Without that, publishing the new java artifact to CodeArtifact will fail as the same package version exists.
 
 # Validate the setup
 
