@@ -90,7 +90,7 @@ export class CdkStackJavaApp extends cdk.Stack {
             commands: [
               'env',
               'export TAG=${CODEBUILD_RESOLVED_SOURCE_VERSION}',
-              'export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain mycdkdemoapp --domain-owner <YOUR_AWS_ACCOUNT_ID> --query authorizationToken --output text`',
+              'export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain mydomain --domain-owner <YOUR_AWS_ACCOUNT_ID> --query authorizationToken --output text`',
               'env'       
              ]
           },

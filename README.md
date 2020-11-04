@@ -112,9 +112,11 @@ You may navigate to the AWS console and look at the newly created profiling grou
 Modify the origin of the demo repo to point to the newly created code commit repo. 
 
 ```
-
+cd /home/ec2-user/environment/codeGuruDemoApp
 git remote set-url origin https://git-codecommit.$AWS_REGION.amazonaws.com/v1/repos/CdkStackJavaApp-repo
-
+git remote -v
+git branch -m master
+git branch
 ```
 
 <b> Step4: Code Artifact setup :</b>
