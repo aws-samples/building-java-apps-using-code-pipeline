@@ -211,7 +211,7 @@ Also modify the line containing "alias javacmd=" with the updated profiling grou
 Now update the file scripts/install.sh with the updated domain, repo and region.
 
 ```bash
-aws codeartifact get-package-version-asset --region=<region> --domain mydomain --repository mycdkdemoapp --format maven --package DemoApplication --namespace org.example --package-version 1.6 --asset DemoApplication-1.6-jar-with-dependencies.jar /tmp/demoapplication.jar  > /tmp/demoutput
+aws codeartifact get-package-version-asset --region=<region> --domain mydomain --repository mycdkdemoapp --format maven --package DemoApplication --namespace org.example --package-version 1.6 --asset DemoApplication-1.6-jar-with-dependencies.jar /home/ec2-user/server/demoapplication.jar  > /tmp/demoutput
 ```
 
 7. Modify the CodeBuild project to update the CODEARTIFACT_AUTH_TOKEN
