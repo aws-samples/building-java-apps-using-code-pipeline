@@ -144,7 +144,7 @@ Now associate the repository with public maven central repository:
 
 * Replace the profiles section, servers section and mirrors section in settings.xml with these values.
 
-This is how a sample setting.xml file should look like
+This is how a sample setting.xml file should look like (replace ACCT-ID and REGION)
 
 ```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
@@ -163,7 +163,7 @@ This is how a sample setting.xml file should look like
     <mirror>
       <id>mydomain--mycdkdemoapp</id>
       <name>mydomain--mycdkdemoapp</name>
-      <url>https://mydomain-<ACCT-ID>.d.codeartifact.us-east-2.amazonaws.com/maven/mycdkdemoapp/</url>
+      <url>https://mydomain-<ACCT-ID>.d.codeartifact.<REGION>.amazonaws.com/maven/mycdkdemoapp/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
@@ -177,7 +177,7 @@ This is how a sample setting.xml file should look like
       <repositories>
         <repository>
           <id>mydomain--mycdkdemoapp</id>
-          <url>https://mydomain-<ACCT-ID>.d.codeartifact.us-east-2.amazonaws.com/maven/mycdkdemoapp/</url>
+          <url>https://mydomain-<ACCT-ID>.d.codeartifact.<REGION>.amazonaws.com/maven/mycdkdemoapp/</url>
         </repository>
       </repositories>
     </profile>
@@ -186,13 +186,14 @@ This is how a sample setting.xml file should look like
 ```
 
 5. Modify the pom.xml and distribution management section, from the code artifact connection instructions
+Example below (replace ACCT-ID and REGION)
 
 ```xml
     <distributionManagement>
       <repository>
         <id>mydomain--mycdkdemoapp</id>
         <name>mydomain--mycdkdemoapp</name>
-        <url>https://mydomain-<ACCT-ID>.d.codeartifact.us-east-2.amazonaws.com/maven/mycdkdemoapp/</url>
+        <url>https://mydomain-<ACCT-ID>.d.codeartifact.<REGION>.amazonaws.com/maven/mycdkdemoapp/</url>
       </repository>
     </distributionManagement>
 ```
@@ -202,7 +203,7 @@ This is how a sample setting.xml file should look like
 
 ```bash
 export DEMO_APP_BUCKET_NAME=<Found in CloudFormation resources that is not CodePipeline artifact bucket>
-export AWS_CODEGURU_TARGET_REGION=<Region>
+export AWS_CODEGURU_TARGET_REGION=<REGION>
 export DEMO_APP_SQS_URL=<http link found in CloudFormation resources>
 export AWS_CODEGURU_PROFILER_GROUP_NAME=myCodeGuruProfilingGroup-WithIssues
 ```
@@ -211,7 +212,7 @@ Also modify the line containing "alias javacmd=" with the updated profiling grou
 Now update the file scripts/install.sh with the updated domain, repo and region.
 
 ```bash
-aws codeartifact get-package-version-asset --region=<region> --domain mydomain --repository mycdkdemoapp --format maven --package DemoApplication --namespace org.example --package-version 1.6 --asset DemoApplication-1.6-jar-with-dependencies.jar /tmp/demoapplication.jar  > /tmp/demoutput
+aws codeartifact get-package-version-asset --region=<REGION> --domain mydomain --repository mycdkdemoapp --format maven --package DemoApplication --namespace org.example --package-version 1.6 --asset DemoApplication-1.6-jar-with-dependencies.jar /home/ec2-user/server/demoapplication.jar > /tmp/demooutput 2>&1
 ```
 
 7. Modify the CodeBuild project to update the CODEARTIFACT_AUTH_TOKEN
