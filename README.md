@@ -248,4 +248,4 @@ Note: The package version referred to here is 1.6 to begin with. If need to re-r
 
 4. Navigate to CodeGuru Profiler section and check "Heap Usage" report. There should be some reports in 10-25 minutes.
 
-<img src="images/CodeGuruProfiling-HeapSummary.png" alt="dashboard" style="border:1px solid black">
+<img src="images/CodeGuruProfiling-HeapSummary.PNG" alt="dashboard" style="border:1px solid black">
