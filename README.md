@@ -250,6 +250,3 @@ Note: The package version referred to here is 1.6 to begin with. If need to re-r
 
 <img src="images/CodeGuruProfiling-HeapSummary.png" alt="dashboard" style="border:1px solid black">
 
-<img src="images/CodeGuruProfiling-HeapObjectType.png" alt="dashboard" style="border:1px solid black">
-
-
