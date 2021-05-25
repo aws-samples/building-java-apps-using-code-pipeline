@@ -210,7 +210,7 @@ export class CdkStackJavaApp extends cdk.Stack {
       'exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1',
       'yum install -y tmux jq java-11-amazon-corretto-headless ruby',
       'cd /home/ec2-user',
-      `wget https://d1osg35nybn3tt.cloudfront.net/com/amazonaws/codeguru-profiler-java-agent-standalone/1.0.0/codeguru-profiler-java-agent-standalone-1.0.0.jar`,
+      `wget https://d1osg35nybn3tt.cloudfront.net/com/amazonaws/codeguru-profiler-java-agent-standalone/1.1.1/codeguru-profiler-java-agent-standalone-1.1.1.jar`,
       'yum install -y aws-cli',
       'cd /tmp',
       `wget https://aws-codedeploy-${cdk.Aws.REGION}.s3.amazonaws.com/latest/codedeploy-agent.noarch.rpm -P /tmp`,
