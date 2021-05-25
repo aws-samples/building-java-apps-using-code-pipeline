@@ -8,5 +8,5 @@ export AWS_CODEGURU_PROFILER_HEAP_SUMMARY_ENABLED=true
 ls
 pwd
 cd /home/ec2-user/server/
-java -javaagent:/home/ec2-user/codeguru-profiler-java-agent-standalone-1.1.0.jar="profilingGroupName:myCodeGuruProfilingGroup-WithIssues,heapSummaryEnabled:true" -jar /home/ec2-user/server/demoapplication.jar with-issues &>/dev/null &
+java -javaagent:/home/ec2-user/codeguru-profiler-java-agent-standalone-1.1.1.jar="profilingGroupName:myCodeGuruProfilingGroup-WithIssues,heapSummaryEnabled:true" -jar /home/ec2-user/server/demoapplication.jar with-issues &>/dev/null &
 echo "do nothing"
