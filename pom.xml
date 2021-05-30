@@ -109,7 +109,7 @@
         <repository>
             <id>mydomain--mycdkdemoapp</id>
             <name>mydomain--mycdkdemoapp</name>
-            <url>https://mydomain-${ACCOUNT_ID}.d.codeartifact.{REGION}.amazonaws.com/maven/mycdkdemoapp/</url>
+            <url>https://mydomain-<ACCT-ID>.d.codeartifact.<region>.amazonaws.com/maven/mycdkdemoapp/</url>
         </repository>
     </distributionManagement>
 </project>

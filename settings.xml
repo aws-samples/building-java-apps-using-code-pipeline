@@ -4,24 +4,34 @@
 
   <servers>
     <server>
-      <id>mycdkdemoapp--mycdkdemoapp</id>
+      <id>mydomain--mycdkdemoapp</id>
       <username>aws</username>
       <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
     </server>
   </servers>
+  
+  <mirrors>
+    <mirror>
+      <id>mydomain--mycdkdemoapp</id>
+      <name>mydomain--mycdkdemoapp</name>
+      <url>https://mydomain-<ACCT-ID>.d.codeartifact.<region>.amazonaws.com/maven/mycdkdemoapp/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
 
   <profiles>
     <profile>
-      <id>mycdkdemoapp--mycdkdemoapp</id>
+      <id>mydomain--mycdkdemoapp</id>
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>
       <repositories>
         <repository>
-          <id>mycdkdemoapp--mycdkdemoapp</id>
-          <url>https://mycdkdemoapp-${ACCOUNT_ID}.d.codeartifact.{REGION}.amazonaws.com/maven/mycdkdemoapp/</url>
+          <id>mydomain--mycdkdemoapp</id>
+          <url>https://mydomain-<ACCT-ID>.d.codeartifact.<region>.amazonaws.com/maven/mycdkdemoapp/</url>
         </repository>
       </repositories>
     </profile>
   </profiles>
 </settings>
+
