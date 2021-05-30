@@ -89,7 +89,7 @@ aws codeguru-reviewer list-repository-associations
 Note down the ARN from the listing output above and replace that in the CodeBuild project buildspec lines:
 
 ```
-aws codeguru-reviewer create-code-review --name mycodereview$TAG --repository-association-arn <ARN> --type RepositoryAnalysis={RepositoryHead={BranchName=master}}
+aws codeguru-reviewer create-code-review --name mycodereview$TAG --repository-association-arn <ARN> --type RepositoryAnalysis={RepositoryHead={BranchName=main}}
 ```
 
 Now navigate to the Build Details -> Environment -> Locate the service role -> Assign this IAM role with permissions for full access to CodeGuru: AmazonCodeGuruReviewerFullAccess
@@ -115,7 +115,7 @@ Modify the origin of the demo repo to point to the newly created code commit rep
 cd /home/ec2-user/environment/codeGuruDemoApp
 git remote set-url origin https://git-codecommit.$AWS_REGION.amazonaws.com/v1/repos/CdkStackJavaApp-repo
 git remote -v
-git branch -m master
+git branch -m main
 git branch
 ```
 
@@ -226,7 +226,7 @@ git add scripts/start.sh
 git add settings.xml
 git add pom.xml
 git commit -m "Updating the CodeDeploy scripts, settings.xml and pom.xml files"
-git push origin master
+git push origin main
 ```
 
 This will kickstart the codepipeline, wait for all stages to complete.

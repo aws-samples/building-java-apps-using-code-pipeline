@@ -101,8 +101,6 @@ export class CdkStackJavaApp extends cdk.Stack {
               `mvn package -Dmaven.test.skip=true -q`,
               'mvn compile -Dmaven.test.skip=true -q',
               'mvn -s settings.xml deploy'
-              // TODO1: log into code artifact &
-              // TODO2: Publish the package into code artifact
             ]
           }
         },
@@ -135,6 +133,7 @@ export class CdkStackJavaApp extends cdk.Stack {
 
     const sourceAction = new codepipeline_actions.CodeCommitSourceAction({
       actionName: 'CodeCommit',
+      branch: 'main',
       repository,
       output: sourceOutput,
     });
