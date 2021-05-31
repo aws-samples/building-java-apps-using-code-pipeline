@@ -210,6 +210,7 @@ export class CdkStackJavaApp extends cdk.Stack {
       'yum install -y tmux jq java-11-amazon-corretto-headless ruby',
       'cd /home/ec2-user',
       'mkdir server',
+      'chown -R ec2-user:ec2-user server',
       `wget https://d1osg35nybn3tt.cloudfront.net/com/amazonaws/codeguru-profiler-java-agent-standalone/1.1.1/codeguru-profiler-java-agent-standalone-1.1.1.jar`,
       'yum install -y aws-cli',
       'cd /tmp',
